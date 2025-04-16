@@ -1,0 +1,21 @@
+/*標題置中*/
+h1{
+    text-align: center;
+}
+/*剩餘時間，id="time"，標籤置中顯示*/
+#time{
+    text-align: center;
+    font-size: 50px;
+}
+/*將設定目標日期及時間標籤、數入框、兩個按鈕置中顯示*/
+#timer-container {
+    display: flex;
+    align-items: center;    /* 水平置中 */
+    justify-content: center; /* 垂直置中 */
+    gap: 10px; /* 元素之間的間距 */
+}
+
+/*第三個元件為按鈕，顯示“暫停”，在開始倒計時時才與開始按鈕間交換*/
+#pause-button {
+    display: none; /* 預設隱藏 */
+}

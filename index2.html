@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    link至style.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--  標題為“計時器”-->
+    <h1>計時器</h1>
+<!--剩餘時間顯示器，顯示資料包含時、分、秒，以冒號隔開，yyyy-mm-dd hh:mm:ss-->
+    <p id="time">00:00:00</p>
+
+
+
+<!--    使用一個div來包裹一家標籤、一個輸入框和兩個按鈕來設定目標日期及時間。-->
+    <div id="timer-container">
+    <!--  第一個元件為標籤，顯示“剩餘時間”-->
+        <label for="remaining-time">設定目標日期及時間</label>
+    <!--  第二個元件為輸入框，顯示“yyyy-mm-dd hh:mm:ss”&ndash;&gt;-->
+        <input type="datetime-local" id="remaining-time" value="yyyy-mm-dd --:--:--">
+    <!--  第三個元件為按鈕，顯示“開始”-->
+        <button id="start-button">開始</button>
+    <!--  第三個元件為按鈕，顯示“暫停”，在開始倒計時時才與開始按鈕間交換-->
+        <button id="pause-button">暫停</button>
+    <!--  第三個元件為按鈕，顯示“繼續”，在暫停倒計時時才與暫停按鈕間交換-->
+        <button id="continue-button" style="display: none;">繼續</button>
+      <!--  第三個元件為按鈕，顯示“重置”-->
+        <button id="reset-button">重置</button>
+    </div>
+
+<!--        //連結timer.js-->
+    <script src="timer.js"></script>
+</body>
+</html>
